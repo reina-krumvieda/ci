@@ -1,0 +1,16 @@
+name: Unit tests
+
+on:
+  push:
+      branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit_tests:
+    runs_on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |. #the pipe implies multiple lines to follow
+        cd test/unit
+        python -m unittest test_utils
