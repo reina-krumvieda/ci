@@ -5,6 +5,7 @@ import shutil
 import random
 src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append(src_path)
+#from class: sys.path.append('../')
 import utils  # nopep8
 
 
