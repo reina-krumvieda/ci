@@ -34,6 +34,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - run: | 
-          cd test/unit
-          python -m unittest test_utils
+      - run: python -m unittest tests/test_utils
